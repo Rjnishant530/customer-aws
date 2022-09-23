@@ -3,6 +3,7 @@ package com.sony.customer.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import com.sony.customer.entity.CustomerError;
 import com.sony.customer.entity.CustomerList;
 import com.sony.customer.service.CustomerService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/customers")
 public class CustomerController {
